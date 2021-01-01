@@ -42,7 +42,7 @@ export default class AStar {
 
     public Start() {
         this.CreateBoard();
-        
+
         this.findPath([
             this._startPos.x,
             this._startPos.y,
@@ -196,18 +196,6 @@ export default class AStar {
         );
 
         return node;
-
-        // return new Node{
-        //     x: xNum,
-        //     y: yNum,
-        //     gCost: 0,
-        //     fCost: 0,
-        //     hCost: 0,
-        //     parent: null,
-        //     space: this._maze[yNum][xNum],
-        //     walkable: this._maze[yNum][xNum] !== this.#wall && this._maze[yNum][xNum] !== this.#door,
-        // };
-
     }
 
 }
